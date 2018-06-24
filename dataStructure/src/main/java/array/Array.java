@@ -51,7 +51,7 @@ public class Array<E> {
     }
 
     public E get(int index) {
-        if (index < 0 || index > size) {
+        if (index < 0 || index >=size) {
             throw new IllegalArgumentException("index illegal!");
         }
         return data[index];
